@@ -1,0 +1,35 @@
+# NOTE: the synthetic data files this repo ships (Daily_Means_Through_2022.csv
+# and friends) deliberately share their filenames with the real Fixed-Site
+# Monitoring Network files, so those names cannot be blocked here. If you drop
+# the real data into this working tree it WILL look committable. Don't.
+# Keep the real data in the private repo.
+
+# paths that only ever held real data
+/nbsmn20/
+/formatted_bullock/
+
+# fitted models — data-derived, and pickles are unsafe to distribute.
+# regenerate them by running the notebooks.
+*.pkl
+*.joblib
+shap_values.csv
+
+# --- python -----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+*.egg-info/
+
+# --- tooling / local state --------------------------------------------------
+.claude/
+.gstack/
+.streamlit/secrets.toml
+.DS_Store
+.vscode/
+.idea/
+
+# --- prophet / cmdstan build artifacts --------------------------------------
+stan_model/
