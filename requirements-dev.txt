@@ -1,0 +1,33 @@
+# Full analysis stack for the notebooks and for regenerating the sample data
+# with make_sample_data.py. NOT installed by Streamlit Community Cloud — the
+# app only needs requirements.txt.
+#
+# Python 3.11 or 3.12.
+#
+#   pip install -r requirements.txt -r requirements-dev.txt
+
+# everything the deployed app needs
+-r requirements.txt
+
+# data formats
+openpyxl>=3.1
+xlsxwriter>=3.1
+
+# modeling
+scikit-learn>=1.4
+statsmodels>=0.14
+xgboost>=2.0
+shap>=0.44
+pmdarima>=2.0
+statsforecast>=1.7
+darts>=0.27
+sktime>=0.26
+
+# missing-data exploration
+missingno>=0.5
+fancyimpute>=0.7
+missforest>=2.5
+
+# interactive exploration
+pygwalker>=0.4
+graphviz>=0.20

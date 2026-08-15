@@ -1,30 +1,16 @@
+# Runtime dependencies for the Streamlit app (streamlit_stuff.py).
+# Kept deliberately small: this is what Streamlit Community Cloud installs on
+# every deploy. The modeling/notebook stack lives in requirements-dev.txt.
+#
 # Python 3.11 or 3.12.
 
-# core
-numpy>=1.26,<2.3
+streamlit>=1.30
 pandas>=2.2,<3
+numpy>=1.26,<2.3
+plotly>=5.18
+prophet>=1.1
+
+# imported by the app but not currently plotted with; drop these two if you
+# also drop the matplotlib/seaborn imports at the top of the app.
 matplotlib>=3.8
 seaborn>=0.13
-plotly>=5.18
-openpyxl>=3.1
-xlsxwriter>=3.1
-
-# modeling
-scikit-learn>=1.4
-statsmodels>=0.14
-xgboost>=2.0
-shap>=0.44
-prophet>=1.1
-pmdarima>=2.0
-statsforecast>=1.7
-darts>=0.27
-sktime>=0.26
-
-missingno>=0.5
-fancyimpute>=0.7
-missforest>=2.5
-
-# app and interactive exploration
-streamlit>=1.30
-pygwalker>=0.4
-graphviz>=0.20

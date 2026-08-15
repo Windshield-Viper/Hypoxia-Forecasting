@@ -1,8 +1,14 @@
-# NOTE: the synthetic data files this repo ships (Daily_Means_Through_2022.csv
-# and friends) deliberately share their filenames with the real Fixed-Site
-# Monitoring Network files, so those names cannot be blocked here. If you drop
-# the real data into this working tree it WILL look committable. Don't.
-# Keep the real data in the private repo.
+# --- data -------------------------------------------------------------------
+# Nothing under data/ is committed. The synthetic files that live there share
+# their filenames with the real Fixed-Site Monitoring Network data on purpose,
+# so ignoring the whole directory — rather than each name — is what keeps the
+# real data uncommittable if you ever drop it in here. Keep the real data in
+# the private repo.
+/data/
+
+# The generator that produces data/ is kept local too, so a clone has neither
+# the data nor a way to rebuild it. Both live in the private repo.
+/make_sample_data.py
 
 # paths that only ever held real data
 /nbsmn20/
