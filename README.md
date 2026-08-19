@@ -3,7 +3,7 @@
 Using machine learning to forecast hypoxia (low dissolved oxygen) in Narragansett Bay,
 from the Fixed-Site Monitoring Network's multi-station sonde record.
 
-Full writeup: [Narragansett Bay hypoxia forecasting](hypoxia-report.pdf)
+Full writeup: [Narragansett Bay hypoxia forecasting](hypoxia-new.pdf)
 
 Interactive website: [https://narrabaydata.streamlit.app/](https://narrabaydata.streamlit.app/)
 
