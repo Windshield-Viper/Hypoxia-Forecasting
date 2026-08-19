@@ -1,4 +1,4 @@
-# Narragansett Bay hypoxia forecasting
+# HypoxAI: Narragansett Bay hypoxia forecasting
 
 Using machine learning to forecast hypoxia (low dissolved oxygen) in Narragansett Bay,
 from the Fixed-Site Monitoring Network's multi-station sonde record.
